@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+:root{
+    --cor0: #D97197;
+    --cor1: #2D0FF2;
+    --cor2: #4BA4F2;
+    --cor3: #084259;
+    --cor4: #0D0D0D;
+
+    --fontetituloprincipal:"Prosto One", cursive;
+    --fontetituloprincipal2: 'Kalam', cursive;
+    --fontepadrao: "Noto Sans", sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fontepadrao);
+}
+
+body {
+    width: 100vw;
+    margin: auto;
+    background-image: linear-gradient(to right, var(--cor4),var(--cor3), var(--cor2));
+}
+
+
+
+#tituloprincipal{
+    font-size: 1.4em;    
+    text-align: right;
+    line-height: 1.4em;
+    text-shadow: 1px 1px 4px black;
+
+}
+
+#tituloprincipal h1{
+    font-family: var(--fontetituloprincipal);
+    color: white;
+
+}
+
+#tituloprincipal h2 {
+    font-family: var(--fontetituloprincipal2);
+    color: white;
+
+}
+
+#tituloprincipal h1::first-letter {
+    color: #D97197;
+
+}
+
+
+#cabecalho{
+    background-color: var(--cor3);
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+    margin: 0 5px;
+    padding: 4px;
+    border-radius: 5px;
+
+}
+
+#menu a:hover {
+    color: var(--cor3);
+    background-color: white;
+    box-shadow: inset 1px 1px 5px var(--cor2);
+    transition: .2s;
+
+    
+}
+
+#icone-rede-sociais a {
+    margin-left: 4px;
+
+}
+
+#primeirasecao {
+    position: relative;
+    display: flex;
+    justify-content: end;    
+}
+
+#primeirasecao img{
+    width: 800px;
+
+}
+
+#texto1 {
+    position: absolute;
+    color: white;
+    width: 400px;
+    height: 533.135px;
+    background-image: linear-gradient(to right, 
+    black 80%, 
+    transparent);
+    top: 0;
+    left: 0;
+
+}
+
+#texto1 p{
+
+    text-align: left;
+    font-size: 1.1em;
+    font-family: var(--fontepadrao);
+    margin-top: 200px;
+    width: 280px;
+    margin-left: 70px;
+
+}
+
+.botaosaibamais{
+    background-color: var(--cor0);
+    text-decoration: none;
+    font-weight: 800;
+    color: var(--cor4);
+    font-family: var(--fontepadrao);
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    font-size: 1em;   
+    letter-spacing: 2px; 
+    box-shadow: 0px 0px 30px #40222d;
+    
+}
+
+
+#segundasecao {
+    background-color: var(--cor2);
+    width: 80vw ;
+    height: 300px;
+    margin: 100px auto;
+    border-radius: 40px;
+}
+
+#segundasecao h1 {
+    font-family: var(--fontepadrao);
+    font-weight: bolder;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    padding: 40px;
+}
+
+
+#segundasecao p {
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    font-weight: bolder;
+    font-style: italic;
+    box-sizing: border-box;
+
+} 
+
+#produtos {
+    width: 100vw;
+    background-color: var(--cor3);
+}
+
+#produtos h1 {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    font-family: var(--fontetituloprincipal);
+    padding: 40px;
+
+}
+
+#fotos {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+#fotos img{
+    width: 250px;
+    height: 350px;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+#fotos p {
+    background-color: var(--cor4);
+    color:white;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+    font-family: var(--fontetituloprincipal);
+    margin-bottom: 40px;
+    width: 250px;
+    text-shadow: 1px 1px 5px var(--cor1);
+    
+}
+
+footer {
+    margin-top: 100px;
+    background-color: var(--cor3);
+    height: 50px;
+    color: white;
+    text-align: center;
+}
+
+footer div {
+    padding: 15px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+         
+    #cabecalho {
+        flex-direction: column;
+        height: 40vh;
+
+    }
+
+    #menu {
+        width: 90vw;
+        margin: 1%;
+         }
+
+
+    #menu a {
+        font-size: 3vw;
+    }
+
+    
+    #fotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    }
+
+
+}
